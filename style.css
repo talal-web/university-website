@@ -3,48 +3,62 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.container {
     background-image: url(eduford_img/banner.png);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
-.overlay{
+
+/* Overlay */
+.overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-.nav{
+
+/* Navbar */
+.nav {
     position: absolute;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
 }
-.logo{
-    position: absolute;
-    top: 0;
-    left: 0 ;   
+
+/* Logo */
+.logo img {
+    max-width: 120px;
 }
-.nav-links ul{
+
+/* Nav links */
+.nav-links ul {
     display: flex;
-    justify-content: space-evenly;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.nav-links ul li{
-    margin: 0 15px;
-    padding: 20px 5px;
+    gap: 30px;
     list-style: none;
 }
-.nav-links ul a{
+
+.nav-links ul li {
+    padding: 10px 0;
+}
+
+.nav-links ul a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
-.nav-links ul li::after{
+
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -53,6 +67,66 @@
     margin: auto;
     transition: 0.3s;
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
+}
+
+/* Text Box Centered */
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+}
+
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    line-height: 1.6;
+    margin: 10px 0;
+    padding: 5px 3px;
+    font-size: 14px;
+}
+.text-box a{
+    text-decoration: none;
+    color: white;
+}
+.hero-btn{
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10px 15px;
+    background: transparent;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+@media(max-width:700px){
+    .nav {
+    width: 100%;
+    padding: 20px 10px;
+}
+    .nav-links ul {
+    gap: 10px;
+}
+.nav-links ul a {
+    font-weight: normal;
+    font-size: 12px;
+}
+    .text-box{
+    width: 60vh;
+}
+    .text-box h1{
+    font-size: 24px;
+}
+
 }
