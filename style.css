@@ -40,8 +40,16 @@
 .logo img {
     max-width: 120px;
 }
+.fa{
+    font-size: 32px;
+    display: none;
+    
+}
 
 /* Nav links */
+.nav-links{
+    transition: 0.6s;
+}
 .nav-links ul {
     display: flex;
     gap: 30px;
@@ -110,20 +118,46 @@
     background: #f44336;
     transition: 1s;
 }
+
+
+
+
+
+
+
+
+
 @media(max-width:700px){
     .nav {
     width: 100%;
     padding: 20px 10px;
 }
+.nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 999;
+}
     .nav-links ul {
-    gap: 10px;
+        margin: 0 10px;
+        padding: 0 5px;
+        gap: 10px;
 }
 .nav-links ul a {
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: bold;
+}
+.nav-links ul{
+    display: block;
+}
+.fa{
+    display: block;
 }
     .text-box{
-    width: 60vh;
+        left: 35%;
 }
     .text-box h1{
     font-size: 24px;

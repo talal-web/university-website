@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>World's Biggest University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,8 +15,15 @@
         <div class="logo">
             <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford"></a>
         </div>
+        <div class="open-icon" onclick="showMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
 
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
+            <div class="close-icon">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -23,6 +31,7 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            
         </div>
     </div>
     <div class="text-box">
@@ -32,6 +41,8 @@
                  <a href="#" class="hero-btn">Visit Us to know More</a>
         </div>
 </section>
-</body>
 
+
+<script src="script.js"></script>
+</body>
 </html>
