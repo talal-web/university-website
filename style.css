@@ -50,6 +50,7 @@
 /* Nav links */
 .nav-links{
     z-index: 4;
+    display: none;
     transition: 0.6s;
 }
 .nav-links ul {
@@ -263,8 +264,25 @@ h1{
 .testimonial-col .fa-regular{
     color: #f44336;
 }
-
-
+.cta{
+    width: 80%;
+    margin: 50px auto;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(eduford_img/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta a{
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -312,6 +330,9 @@ h1{
 .testimonial-col img{
     margin-left: 0;
     margin-right: 15px;
+}
+.cta h1{
+    font-size: 24px;
 }
 
 }
